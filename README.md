@@ -2,6 +2,9 @@
 
 ###### Pull-to-Refresh Footbal is a inhouse project of [Thinkwik](https://www.thinkwik.com/) and is a free and open source library for anyone to use.
 
+## **DEMO**
+
+<img src="https://github.com/dbthinkwik/Pull-to-Refresh-Football-Animation/blob/master/PullToRefresh.gif" data-canonical-src="https://github.com/dbthinkwik/Pull-to-Refresh-Football-Animation/blob/master/PullToRefresh.gif" width="300" height="600" />
 
 ## **USAGE**
 
