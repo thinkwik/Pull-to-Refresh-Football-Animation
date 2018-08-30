@@ -35,3 +35,8 @@ mPullToRefreshView.setOnRefreshListener(object : FootballPullToRefreshView.OnRef
    }
 })
 ```
+
+## **Compatibility**
+
+1. Kotlin
+2. API level >=17
