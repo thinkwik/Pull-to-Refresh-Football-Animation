@@ -8,23 +8,23 @@ import com.pulltorefreshview.R
 import com.pulltorefreshview.entity.Games
 import kotlinx.android.synthetic.main.raw_hub_feeds.view.*
 
-class GameListAdapter(var gameList: ArrayList<Int>) : RecyclerView.Adapter<GameListAdapter.ListHolder>() {
+class GameListAdapter : RecyclerView.Adapter<GameListAdapter.ListHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListHolder {
         var view = LayoutInflater.from(parent.context).inflate(R.layout.raw_hub_feeds, parent, false)
         return ListHolder(view)
     }
 
     override fun getItemCount(): Int {
-        return gameList.size
+        return 1
     }
 
     override fun onBindViewHolder(holder: ListHolder, position: Int) {
-        holder.onBind(gameList[position])
+        holder.onBind()
     }
 
     inner class ListHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun onBind(gamesEntity: Int) {
-            itemView.ivImage.setImageResource(gamesEntity)
+        fun onBind() {
+
         }
     }
 }

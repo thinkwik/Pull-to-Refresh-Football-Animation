@@ -12,7 +12,6 @@ class PullToRefreshActivity : AppCompatActivity() {
     private val refreshDelay = 3000
     private lateinit var mContext: Context
     private lateinit var mAdapter: GameListAdapter
-    private var gameList = ArrayList<Int>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         mContext = this@PullToRefreshActivity
@@ -24,9 +23,7 @@ class PullToRefreshActivity : AppCompatActivity() {
     private fun init() {
         recyclerView.layoutManager = LinearLayoutManager(mContext, LinearLayoutManager.VERTICAL, false)
 
-        dummyGames()
-
-        mAdapter = GameListAdapter(gameList)
+        mAdapter = GameListAdapter()
         recyclerView.adapter = mAdapter
 
         mPullToRefreshView.setOnRefreshListener(object : FootballPullToRefreshView.OnRefreshListener {
@@ -34,16 +31,5 @@ class PullToRefreshActivity : AppCompatActivity() {
                 mPullToRefreshView.postDelayed({ mPullToRefreshView.setRefreshing(false) }, refreshDelay.toLong())
             }
         })
-    }
-
-    private fun dummyGames() {
-        gameList.add(R.drawable.ic_dummy1)
-        gameList.add(R.drawable.ic_dummy2)
-        gameList.add(R.drawable.ic_dummy3)
-        gameList.add(R.drawable.ic_dummy4)
-        gameList.add(R.drawable.ic_dummy5)
-        gameList.add(R.drawable.ic_dummy6)
-        gameList.add(R.drawable.ic_dummy7)
-        gameList.add(R.drawable.ic_dummy8)
     }
 }
