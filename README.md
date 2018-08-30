@@ -8,7 +8,27 @@
 
 ## **USAGE**
 
-1. Include the `PullToRefreshView` widget in your layout.
+[![](https://jitpack.io/v/dbthinkwik/Pull-to-Refresh-Football-Animation.svg)](https://jitpack.io/#dbthinkwik/Pull-to-Refresh-Football-Animation)
+
+1. Add below code in your `build.gradle` file (located in root project folder structure).
+
+```
+allprojects {
+   repositories {
+      ...
+      maven { url 'https://jitpack.io' }
+   }
+}
+```
+
+2. Add Dependency
+```
+dependencies {
+   implementation 'com.github.thinkwik:Pull-to-Refresh-Football-Animation:-SNAPSHOT'
+}
+```
+
+3. Include the `PullToRefreshView` widget in your layout.
 
 ```
 <com.thinkwik.pulltorefresh.FootballPullToRefreshView
@@ -24,13 +44,12 @@
 </com.thinkwik.pulltorefresh.FootballPullToRefreshView>
 ```
 
-
-2. Define your Refresh Delay
+4. Define your Refresh Delay
 ```
 private val refreshDelay = 3000  (value is in milliseconds)
 ```
 
-3. In your `onCreate` method refer to the View and setup `OnRefreshListener`.
+5. In your `onCreate` method refer to the View and setup `OnRefreshListener`.
 ```
 mPullToRefreshView.setOnRefreshListener(object : FootballPullToRefreshView.OnRefreshListener {
    override fun onRefresh() {
