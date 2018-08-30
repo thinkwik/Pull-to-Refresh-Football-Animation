@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#171718</color>
+    <color name="colorPrimaryDark">#171718</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="lipstick">#da2234</color>
+    <color name="black">#282828</color>
+    <color name="azure">#00a6ed</color>
+    <color name="apricot">#ff9b71</color>
+    <color name="cool_green">#35c359</color>
+    <color name="dull_white">#f9f9f9</color>
+    <color name="white">#ffffff</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_30">#4c000000</color>
+    <color name="black_80">#80000000</color>
+    <color name="black_10">#19282828</color>
+    <color name="black_transparent">#CC000000</color>
+    <color name="text_dark">#253031</color>
+    <color name="text_hint">#cdcdcd</color>
+    <color name="text_calendar">#aaaaaa</color>
+    <color name="text_grey">#adadad</color>
+    <color name="text_light_grey">#95a3bf</color>
+    <color name="pink">#f038ff</color>
+
+
+
+</resources>
